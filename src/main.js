@@ -45,14 +45,6 @@ let string = `
 #taiji{
     animation: taijiRotate 500ms infinite linear;
 }
-@keyframes taijiRotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
 `;
 let string1 = "";
 let n = 0;
@@ -74,7 +66,7 @@ let step = () => {
             n += 1;
             step();
         }
-    }, 10);
+    }, 5);
 };
 
 step();

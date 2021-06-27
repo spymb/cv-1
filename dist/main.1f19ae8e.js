@@ -120,7 +120,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"main.js":[function(require,module,exports) {
 var html = document.querySelector("#html");
 var style = document.querySelector("#style");
-var string = "\n/* \u6765\u753B\u4E00\u4E2A\u592A\u6781\u5427\n * \u9996\u5148\u51C6\u5907\u4E00\u4E2Adiv\n */\n#taiji{\n    border: 1px solid red;\n    width: 200px;\n    height: 200px;\n}\n/* \u7136\u540E\u628Adiv\u53D8\u6210\u4E00\u4E2A\u5706 */\n#taiji{\n    border-radius: 50%;\n    box-shadow: 0 0 3px rgba(0,0,0,0.5);\n    border: none;\n}\n/* \u592A\u6781\u9634\u9633\u4E00\u9ED1\u4E00\u767D */\n#taiji{\n    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);\n}\n/* \u592A\u6781\u53CC\u9C7C\uFF0C\u52A0\u4E0A\u9C7C\u5934\u548C\u9C7C\u773C~ */\n#taiji::before{\n    width: 100px;\n    height: 100px;\n    top: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    background: #000;\n    border-radius: 50%;\n    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);\n}\n#taiji::after{\n    width: 100px;\n    height: 100px;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    background: #fff;\n    border-radius: 50%;\n    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%, rgba(0,0,0,1) 100%);\n}\n/* \u6700\u540E\u8BA9\u592A\u6781\u8F6C\u8D77\u6765\u5427 */\n#taiji{\n    animation: taijiRotate 500ms infinite linear;\n}\n@keyframes taijiRotate {\n    0% {\n      transform: rotate(0deg);\n    }\n    100% {\n      transform: rotate(360deg);\n    }\n  }\n";
+var string = "\n/* \u6765\u753B\u4E00\u4E2A\u592A\u6781\u5427\n * \u9996\u5148\u51C6\u5907\u4E00\u4E2Adiv\n */\n#taiji{\n    border: 1px solid red;\n    width: 200px;\n    height: 200px;\n}\n/* \u7136\u540E\u628Adiv\u53D8\u6210\u4E00\u4E2A\u5706 */\n#taiji{\n    border-radius: 50%;\n    box-shadow: 0 0 3px rgba(0,0,0,0.5);\n    border: none;\n}\n/* \u592A\u6781\u9634\u9633\u4E00\u9ED1\u4E00\u767D */\n#taiji{\n    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);\n}\n/* \u592A\u6781\u53CC\u9C7C\uFF0C\u52A0\u4E0A\u9C7C\u5934\u548C\u9C7C\u773C~ */\n#taiji::before{\n    width: 100px;\n    height: 100px;\n    top: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    background: #000;\n    border-radius: 50%;\n    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);\n}\n#taiji::after{\n    width: 100px;\n    height: 100px;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    background: #fff;\n    border-radius: 50%;\n    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%, rgba(0,0,0,1) 100%);\n}\n/* \u6700\u540E\u8BA9\u592A\u6781\u8F6C\u8D77\u6765\u5427 */\n#taiji{\n    animation: taijiRotate 500ms infinite linear;\n}\n";
 var string1 = "";
 var n = 0;
 
@@ -143,7 +143,7 @@ var step = function step() {
       n += 1;
       step();
     }
-  }, 10);
+  }, 5);
 };
 
 step();
